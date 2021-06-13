@@ -1,7 +1,9 @@
 # RTES Final Project
 
 The goal of the final project was to implement a hardware accelerated
-encryption algorithm based on Huffman coding and run it on a DE1-SoC board.
+encryption algorithm based on Huffman coding and run it on a DE1-SoC board. The
+project was part of the Real Time Embedded Systems course at EPFL in the spring
+semester of 20/21.
 
 ## Building and running
 To build the FPGA portion of the program you need to have Quartus 18.1
