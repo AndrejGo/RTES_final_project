@@ -53,4 +53,6 @@ sudo e2fsck -f /dev/<sdcard-device>p2
 ```
 before, but you will be prompted about this.
 
-## Brief description
+## Missing sw directory
+This repository does not contain the `sw` repository, since it was 4GB large
+and contained two other repositories for Linux and U-Boot.
