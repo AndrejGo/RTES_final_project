@@ -1,0 +1,162 @@
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:led_pio_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:gpio_pio_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:encoder_0_avalon_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:sdram_controller_0_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|encoder:encoder_0|State
+Name State.WR_TOTAL_LEN_4_WAIT State.WR_TOTAL_LEN_4 State.WR_TOTAL_LEN_3_WAIT State.WR_TOTAL_LEN_3 State.WR_TOTAL_LEN_2_WAIT State.WR_TOTAL_LEN_2 State.WR_TOTAL_LEN_1_WAIT State.WR_TOTAL_LEN_1 State.TEXT_WAIT State.TEXT_START State.TEXT_WR_INPUT State.TREE_WAIT State.TREE_START State.TREE_WR_INPUT State.IDLE 
+State.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+State.TREE_WR_INPUT 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+State.TREE_START 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+State.TREE_WAIT 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+State.TEXT_WR_INPUT 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+State.TEXT_START 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+State.TEXT_WAIT 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+State.WR_TOTAL_LEN_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+State.WR_TOTAL_LEN_1_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+State.WR_TOTAL_LEN_2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+State.WR_TOTAL_LEN_2_WAIT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+State.WR_TOTAL_LEN_3 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_TOTAL_LEN_3_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_TOTAL_LEN_4 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_TOTAL_LEN_4_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|encoder:encoder_0|MasterMux
+Name MasterMux.TXT MasterMux.TREE MasterMux.OWN MasterMux.NONE 
+MasterMux.NONE 0 0 0 0 
+MasterMux.OWN 0 0 1 1 
+MasterMux.TREE 0 1 0 1 
+MasterMux.TXT 1 0 0 1 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|encoder:encoder_0|text_handler:text_h|State
+Name State.WR_LEN_4_WAIT State.WR_LEN_4 State.WR_LEN_3_WAIT State.WR_LEN_3 State.WR_LEN_2_WAIT State.WR_LEN_2 State.WR_LEN_1_WAIT State.WR_LEN_1 State.WAIT_PADDING State.ADD_PADDING State.WRITE_CODE_WAIT State.WRITE_CODE State.READ_CODE_WAIT State.READ_CODE_START State.READ_CODE State.CHECK_END State.READ_WAIT State.SET_RD_ADDR State.IDLE 
+State.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+State.SET_RD_ADDR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+State.READ_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+State.CHECK_END 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+State.READ_CODE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+State.READ_CODE_START 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+State.READ_CODE_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+State.WRITE_CODE 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+State.WRITE_CODE_WAIT 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+State.ADD_PADDING 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+State.WAIT_PADDING 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_1_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_2_WAIT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_3 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_3_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_4 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_4_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|encoder:encoder_0|text_handler:text_h|MasterMux
+Name MasterMux.CODE_WR MasterMux.CODE_RD MasterMux.TEXT_HANDLER MasterMux.NONE 
+MasterMux.NONE 0 0 0 0 
+MasterMux.TEXT_HANDLER 0 0 1 1 
+MasterMux.CODE_RD 0 1 0 1 
+MasterMux.CODE_WR 1 0 0 1 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|soc_system_sdram_controller_0:sdram_controller_0|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|soc_system_sdram_controller_0:sdram_controller_0|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|encoder:encoder_0|text_handler:text_h|code_writer:cw|State
+Name State.WRITE_CODE_EXTRA_1 State.DONE State.WRITE_CODE_WAIT State.WRITE_CODE State.ADD_CODE State.IDLE 
+State.IDLE 0 0 0 0 0 0 
+State.ADD_CODE 0 0 0 0 1 1 
+State.WRITE_CODE 0 0 0 1 0 1 
+State.WRITE_CODE_WAIT 0 0 1 0 0 1 
+State.DONE 0 1 0 0 0 1 
+State.WRITE_CODE_EXTRA_1 1 0 0 0 0 1 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|encoder:encoder_0|tree_handler:tree_h|State
+Name State.WRITE_WAIT_EXTRA State.WR_LEN_4_WAIT State.WR_LEN_4 State.WR_LEN_3_WAIT State.WR_LEN_3 State.WR_LEN_2_WAIT State.WR_LEN_2 State.WR_LEN_1_WAIT State.WR_LEN_1 State.INCREMENT State.WRITE_WAIT State.WRITE_CHAR State.SET_WR_ADDR State.CHECK_END State.READ_WAIT State.SET_RD_ADDR State.IDLE 
+State.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+State.SET_RD_ADDR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+State.READ_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+State.CHECK_END 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+State.SET_WR_ADDR 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+State.WRITE_CHAR 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+State.WRITE_WAIT 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+State.INCREMENT 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+State.WR_LEN_1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+State.WR_LEN_1_WAIT 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_2_WAIT 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_3 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_3_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_4 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WR_LEN_4_WAIT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.WRITE_WAIT_EXTRA 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|soc_system_sdram_controller_0:sdram_controller_0|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|soc_system_sdram_controller_0:sdram_controller_0|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |DE1_SoC_top_level|soc_system:u0|encoder:encoder_0|text_handler:text_h|code_reader:cr|State
+Name State.LAST State.INCREMENT State.READ_WAIT State.SET_RD_ADDR State.RD_CODE_ADDR_4_WAIT State.RD_CODE_ADDR_4 State.RD_CODE_ADDR_3_WAIT State.RD_CODE_ADDR_3 State.RD_CODE_ADDR_2_WAIT State.RD_CODE_ADDR_2 State.RD_CODE_ADDR_1_WAIT State.RD_CODE_ADDR_1 State.IDLE 
+State.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+State.RD_CODE_ADDR_1 0 0 0 0 0 0 0 0 0 0 0 1 1 
+State.RD_CODE_ADDR_1_WAIT 0 0 0 0 0 0 0 0 0 0 1 0 1 
+State.RD_CODE_ADDR_2 0 0 0 0 0 0 0 0 0 1 0 0 1 
+State.RD_CODE_ADDR_2_WAIT 0 0 0 0 0 0 0 0 1 0 0 0 1 
+State.RD_CODE_ADDR_3 0 0 0 0 0 0 0 1 0 0 0 0 1 
+State.RD_CODE_ADDR_3_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 1 
+State.RD_CODE_ADDR_4 0 0 0 0 0 1 0 0 0 0 0 0 1 
+State.RD_CODE_ADDR_4_WAIT 0 0 0 0 1 0 0 0 0 0 0 0 1 
+State.SET_RD_ADDR 0 0 0 1 0 0 0 0 0 0 0 0 1 
+State.READ_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 1 
+State.INCREMENT 0 1 0 0 0 0 0 0 0 0 0 0 1 
+State.LAST 1 0 0 0 0 0 0 0 0 0 0 0 1 

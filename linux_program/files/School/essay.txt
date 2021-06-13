@@ -1,0 +1,108 @@
+JAVA
+
+Everyone hates java because you need a huge and clumsy JVM to run it, abysmal
+startup times, verbosity and because programming in java mostly means working on
+the most boring business logic legacy codebases written by some poor souls who
+themselves despise their job almost as much as FPGA programming. Also, you have
+to sell your soul to the devil, who goes by the name of Larry Ellison.
+
+But then
+     everyone hates C because its the ultimate footgun. Its physically
+      impossible to write correct code.
+
+     Same for C except for templating, which is even worse.
+      Forgot a semicolon  errors.
+
+     Everyone hates javascript because of its random type coercion and poor
+      language design. Sort , , , variable hoisting and objects as maps
+      with prototyping and mixing pre and self defined properties Also, its
+      literally impossible to write a program that runs on the first try without
+      errors. Wait, I have a better idea ... why not use it on the server
+      Ill just use npm so I can leftpad.
+
+     Everyone hates PHP which stands for Personal Home Page because of its
+      InConsIstent standardlibrary namingConventions, security problems yay
+      for evalGETfoo and, oh yes, mixing code and html. Its slow. Its
+      impossible not to write spaghetti code in it. Its not so bad as it once
+      was  the most recent version even introduced partial unicode support
+    
+     Everyone hates python for its global interpreter lock and the inability to
+      move on from .. Its like being stuck in the s.
+    
+     Everyone hates ruby because its too fucking slow and too much dark magic
+      going on. If it wasnt for that abhorrent monstrosity rubyonrails, it
+      would have gone the way of the dodo decades ago. Ruby used to be the crack
+      epidemic for vulnerable youth developers, but now everybody grew older,
+      wiser, got their life under control, sobered up and thus ditched ruby.
+    
+     Everyone hates haskell because its not really usable in the real world
+      strictly academia only and either way, nobody really gets what a goddamn
+      monad is. You could specialize in haskell and starve to death in a world
+      where software developers are the most precious resource.
+    
+     At least its not lisp though. help
+    
+     Everyone hates rust because its the oh so cool new thing to do and its
+      so much better, the ultimate language to rule them all and every last
+      piece of software absolutely must be rewritten in rust but, honestly, the
+      borrow checker keeps me from getting anything done. also compile times
+      duh.
+    
+     Everyone hates D because ... wait, nobody hates D because nobody uses it.
+      Also, why settle on D if you could use rust D is for people who cant
+      escape the sunk cost fallacy.
+    
+     Everyone hates golang because no generics and youre pretty much at
+      googles mercy if you specialize in it, and weve seen how well that worked
+      out for android devs.
+    
+     Everyone hates swift and kotlin for not bringing anything new to the
+      table. they maybe improve the worst problems of java and objectivec a
+      bit, but in the end, they do nothing other languages havent done better
+      decades ago. pretty much the only revolutionarily good thing swift did was
+      killing off objectivec. In the land of the blind, the one eyed is kind.
+      Java devs love kotlin only because at least its not java.
+    
+     Everyone hates perl because, duh, thats perl I thought I cated a binary
+      executable by accident. My speaker starts bleeping when I view the source
+      code of some scripts.
+    
+     C oh right, lets just forget what Microsoft did to us for the last 
+      years. Theyll certainly never use their power for evil again I cant
+      even remember who Steve Ballmer is anymore.
+    
+     typescript An interpreted language that has to be precompiled before
+      use Javascripts heap of dung with glitter and pink ribbons on top
+    
+     Webassembly is not a programming language but everyone still hates it as
+      it finally removes javascripts inherent opensourcyness from the open web.
+    
+     There are a couple of dead languages nobody hates because all people who
+      hated them are also dead. Looking at you, pascaldelphi. Not basic though,
+      everyone still hates basic  its already genetic.
+    
+     If you want a good language for writing a telephone switch, use erlang or
+      elixir.
+    
+     I dont know much about R, but after seeing an economist use it I was
+      ready to kill myself  or rather, the economist. Anyway, its far too slow
+      to be of much use for actual software development.
+    
+     Everyone hates matlab because ... well, matlab isnt a programming
+      language, its a kind of fancy and overly expensive caluclator that
+      specializes in university lockin.
+    
+     Assembly used to be pretty good language if youre criminally insane.
+      Nowadays assembly knowledge is only relevant for failed games by bored
+      multibillionaires.
+    
+     I dont know if shellscript counts as a programming language, because
+      its probably not turing complete.
+    
+     There are some languages that may or may not be better than CC, like
+     pony or nim, but nobody except for their inventors know. Wait, thats not
+     completely true  ponys compiler is not even selfhosted and written in c,
+     so not even the inventor of pony actually uses pony.
+
+Now theres only one language left, and by principle of exclusion it may be the
+one that doesnt suck. Its brainfuck.

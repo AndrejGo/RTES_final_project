@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    background-color: rgb(49, 49, 49);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+#header {
+    font-size: 40px;
+    padding: 10px 10px 10px 20px;
+    background-color: rgb(20, 20, 20);
+}
+
+#path-row {
+    display: flex;
+    width: 100%;
+}
+
+#path {
+    font-family: monospace;
+    font-size: 28px;
+    padding: 12px;
+    background-color: rgb(0, 60, 68);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    line-height: 32px;
+}
+
+#up-button {
+    font-size: 32px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(0, 87, 99);
+    color: whitesmoke;
+    text-decoration: none;
+}
+#up-button:hover {
+    background-color: rgb(0, 121, 121);
+}
+
+#item-col {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.folder-item {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 87px;
+}
+
+.file-item {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.sw-dl-btn {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    line-height: 26px;
+    margin-right: 10px;
+}
+
+.sw-dl-btn:hover {
+    transition: linear 0.1s;
+    background-color: whitesmoke;
+    color:rgb(0, 60, 68);
+}
+
+.hw-dl-btn {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border: 1px solid;
+    border-color: rgb(184, 255, 255);
+    background-color: rgb(184, 255, 255);
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    line-height: 26px;
+    margin-right: 10px;
+}
+
+.hw-dl-btn:hover {
+    transition: linear 0.1s;
+    border-color: rgb(184, 255, 255) !important;
+    background-color: rgb(29, 29, 29) !important;
+    color:rgb(184, 255, 255);
+}
